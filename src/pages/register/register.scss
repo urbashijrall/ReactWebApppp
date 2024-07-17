@@ -1,0 +1,101 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d1f7f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loginContainer {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    padding: 50px;
+    -webkit-box-shadow: 0px 2px 18px 1px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 2px 18px 1px rgba(199, 199, 199, 1);
+    box-shadow: 0px 2px 18px 1px rgba(199, 199, 199, 1);
+    background: rgb(247, 214, 224);
+    background: radial-gradient(
+      circle,
+      rgba(247, 214, 224, 1) 35%,
+      rgba(209, 247, 243, 1) 78%
+    );
+
+    .loginLeft,
+    .loginRight {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .loginLeft {
+      .loginLogo {
+        font-weight: 800;
+        font-size: 50px;
+        color: #4c7d77;
+        margin-bottom: 10px;
+      }
+
+      .loginDescription {
+        font-size: 20px;
+        color: #4c7d77;
+      }
+    }
+
+    .loginRight {
+        
+      .loginBox {
+        background: rgb(247, 214, 224);
+        background: radial-gradient(circle, rgb(247, 214, 224) 100%, rgb(209, 247, 243) 120%);
+        height: 450px;
+        padding: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .loginInput {
+          height: 50px;
+          border-radius: 10px;
+          border: 1px solid #d1f7f3;
+          font-size: 18px;
+          padding-left: 20px;
+          color: #4c7d77;
+          
+          &:focus {
+            outline: none;
+          }
+        }
+        .loginButton {
+          height: 50px;
+          border-radius: 10px;
+          border: none;
+          background-color: #d1f7f396;
+          color: #4c7d77;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .loginForgot {
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: #d1f7f396;
+            color: #4c7d77;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .loginRegisterButton {
+          height: 50px;
+          border-radius: 10px;
+          border: none;
+          background-color: #d1f7f396;
+          color: #4c7d77;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
